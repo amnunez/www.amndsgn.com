@@ -9,13 +9,27 @@
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
   <div id="pageContainer">
-    <div class="navContainer">
-      <img id="geoLogo" src="AMNBWLine.png" alt="AMN Designs geo logo">
+    <div class="responsiveNav">
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+        <div class="navMenu">
+          <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="resume.html">RESUME</a>
+            <a href="work.html">WORK</a>
+            <a href="contact.html">CONTACT</a>
+          </nav>
+        </div>
+      </div>
+    <div class="contactNavContainer">
+      <img id="geoLogo" src="images/AMNBWLine.png" alt="AMN Designs geo logo">
         <div class="middle">
           <nav id="contactNav">
             <a href="index.html">HOME</a>
@@ -26,7 +40,7 @@
           </nav>
         </div>
       </div>
-    <h1 id="contactHeader">CONTACT</h1>
+    <h1>CONTACT</h1>
       <div id="formContainer">
         <form action="mailto:amnunez2@yahoo.com" method="post" enctype="text/plain">
           <label for="name">NAME</label><br>
