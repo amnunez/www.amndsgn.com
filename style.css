@@ -12,7 +12,7 @@ h1 {
   color: red;
   text-shadow: 1px 1px 5px grey;
 }
-.navContainer {
+.homeNavContainer {
   position: relative;
   width: 90%;
   margin: 10% 0 0 5%;
@@ -34,10 +34,10 @@ h1 {
   -ms-transform: translate(-50%, -50%);
 }
 
-.navContainer:hover .logo {
+.homeNavContainer:hover .logo {
   opacity: 0.7;
 }
-.navContainer:hover .middle {
+.homeNavContainer:hover .middle {
   opacity: 1;
 }
 a {
@@ -69,6 +69,12 @@ iframe {
   left: 25%;
   text-align: left;
 }
+.contactNavContainer {
+  position: relative;
+  width: 90%;
+  margin: 10% 0 0 5%;
+  text-align: center;
+}
 #geoLogo {
   width: 80%;
   margin: 5% 0;
@@ -77,9 +83,13 @@ iframe {
   display: flex;
   flex-wrap: nowrap;
 }
-.navContainer:hover #geoLogo {
+.contactNavContainer:hover #geoLogo {
   opacity: 0.3;
 }
+.contactNavContainer:hover .middle {
+  opacity: 1;
+}
+
 input[type=text], textarea {
   width: 50%;
   padding: 12px;
@@ -107,11 +117,35 @@ textarea {
   color: red;
   text-shadow: 1px 1px 5px grey;
 }
-@media all and (max-width: 740px) {
+@media screen {
+  .responsiveNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 785px) {
   #contactNav {
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
+  }
+  .fullNav {
+    display: none;
+  }
+  .homeNavContainer {
     position: relative;
-    left: 20%;
+    top: 25%;
+  }
+  .responsiveNav {
+    display: block;
+    position: relative;
+    z-index: 100;
+    float: right;
+    margin: 4% 3% 0 10%;
+    width: 37%;
+    text-align: right;
+  }
+  .navMenu {
+    text-align: left;
+  }
+  .clearfix {
+    clear: both;
   }
 }
