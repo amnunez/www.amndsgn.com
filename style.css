@@ -135,6 +135,8 @@ textarea {
   width: 35%;
   }
   .menu-btn {
+    border: none;
+    background: none;
     position:relative;
     left: 80%;
     display: flex;
@@ -209,6 +211,8 @@ textarea {
     text-align: right;
   }
   .menu-btn {
+    border: none;
+    background: none;
     position:relative;
     left: 75%;
     display: flex;
