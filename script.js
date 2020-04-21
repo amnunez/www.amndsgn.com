@@ -1,16 +1,11 @@
 $(document).ready(function() {
-  $(".cross").hide();
-  $(".navMenu").hide();
-  $(".hamburger").click(function() {
-    $(".navMenu").slideToggle("slow", function() {
-      $(".hamburger").hide();
-      $(".cross").show();
-    });
+  $(".menu-btn").click(function() {
+    $(".menu-btn").toggleClass("open");
   });
-  $(".cross").click(function(){
-    $(".navMenu").slideToggle("slow", function(){
-      $(".cross").hide();
-      $(".hamburger").show();
-    });
+});
+$(document).ready(function() {
+  $(".navMenu").hide();
+  $(".menu-btn").click(function() {
+    $(".navMenu").slideToggle("slow");
   });
 });
