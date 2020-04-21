@@ -212,7 +212,7 @@ textarea {
   }
   .menu-btn {
     position:relative;
-    left: 80%;
+    left: 75%;
     display: flex;
     justify-content:center;
     align-items: center;
