@@ -144,8 +144,6 @@ textarea {
     height: 3em;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    /*border: .2em solid black;*/
-    border-radius: .3em;
     }
   .menu-btn_burger {
     width: 2em;
@@ -220,8 +218,6 @@ textarea {
     height: 3em;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    /*border: .2em solid black;*/
-    border-radius: .3em;
     }
   .menu-btn_burger {
     width: 2em;
