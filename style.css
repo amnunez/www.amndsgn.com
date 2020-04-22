@@ -123,6 +123,9 @@ textarea {
 #contactNav {
   display: none;
   }
+ .contactNavContainer:hover #geoLogo {
+  opacity: 1;
+  }
 .fullNav {
   display: none;
   }
@@ -193,6 +196,9 @@ textarea {
 @media screen and (max-width: 550px) {
   #contactNav {
     display: none;
+  }
+  .contactNavContainer:hover #geoLogo {
+  opacity: 1;
   }
   .fullNav {
     display: none;
