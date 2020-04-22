@@ -267,4 +267,7 @@ textarea {
   .clearfix {
     clear: both;
   }
+  iframe {
+    max-width: 550px;
+  }
 }
