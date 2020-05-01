@@ -60,6 +60,63 @@ iframe {
    height: 100%;
    border: none;
 }
+
+/* IMAGE GALLERY */
+
+.workContain {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  padding: 5%;
+  flex: 1 1 90%;
+  min-height: 100vh;
+}
+.gallery {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2vmin;
+}
+.img {
+  background: #4d4e4f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px grey;
+  filter:brightness(0.5) grayscale(100);
+  transition: 0.3s ease-in-out;
+}
+.img:hover {
+  filter:brightness(1) grayscale(0);
+  transition: 0.3s ease-in-out;
+}
+.img.one {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.img.two {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+.img.three {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.img.five {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.img.six {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+/* CONTACT PAGE*/
+
 #formContainer {
   position: relative;
   left: 25%;
