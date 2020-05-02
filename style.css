@@ -250,8 +250,6 @@ textarea {
   }
 .navMenu {
   text-align: left;
-  background-image: url("https://www.consultorartesano.com/julen/wp-content/uploads/2013/02/garabato.jpg");
-  background-size: cover;
   }
 .clearfix {
   clear: both;
@@ -328,9 +326,7 @@ iframe {
     transform:rotate(-45deg);
   }
   .navMenu {
-    text-align: left;
-    background-image: url("https://www.consultorartesano.com/julen/wp-content/uploads/2013/02/garabato.jpg");
-    background-size: cover;
+  text-align: left;
   }
   .clearfix {
     clear: both;
