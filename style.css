@@ -111,12 +111,14 @@ iframe {
   grid-column: span 2;
   background-image: url(TOTW.png);
   background-size: cover;
+  background-position: center;
 }
 .img.six {
   grid-row: span 2;
   grid-column: span 3;
   background-image: url(girl.gif);
   background-size: cover;
+  background-position: center;
 }
 
 /* CONTACT PAGE*/
