@@ -109,10 +109,14 @@ iframe {
 .img.five {
   grid-row: span 3;
   grid-column: span 2;
+  background-image: url(TOTW.png);
+  background-size: cover;
 }
 .img.six {
   grid-row: span 2;
   grid-column: span 3;
+  background-image: url(girl.gif);
+  background-size: cover;
 }
 
 /* CONTACT PAGE*/
