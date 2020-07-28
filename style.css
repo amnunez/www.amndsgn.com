@@ -101,6 +101,7 @@ iframe {
 .img.two {
   grid-row: span 3;
   grid-column: span 3;
+  background-image: url(budget.html);
 }
 .img.three {
   grid-row: span 2;
