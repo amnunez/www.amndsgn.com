@@ -1,34 +1,81 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>AMN DSGN</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Budget App - JavaScript</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/34159f6768.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="homeNavContainer">
-    <img class="logo" src="AMNBlockColor.png" alt="AMN block letter logo">
-      <div class="middle">
-        <nav>
-          <a href="about.html">ABOUT</a><br>
-          <a href="resume.html">RESUME</a><br>
-          <a href="work.html">WORK</a><br>
-          <a href="contact.html">CONTACT</a><br>
-        </nav>
+  <div class="budget-container">
+    <div class="app-title">
+      <a href="">Simple<b>Budget</b></a>
     </div>
+    <div class="budget-header">
+      <div class="balance">
+        <div class="title">
+          Balance
+        </div>
+        <div class="value">
+          <small>$</small>0
+        </div>
+      </div>
+      <div class="chart"></div>
+      <div class="account">
+        <div class="income">
+          <div class="title">
+            Income
+          </div>
+          <div class="income-total">
+            <small>$</small>0
+          </div>
+        </div>
+
+        <div class="outcome">
+          <div class="title">
+            Outcome
+          </div>
+          <div class="outcome-total">
+            <small>$</small>0
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="budget-dashboard">
+        <div class="toggle">
+          <div class="tab1">Expense</div>
+          <div class="tab2">Income</div>
+          <div class="tab3 active">All</div>
+        </div>
+        <div class="hide" id="income">
+          <ul class="list"></ul>
+          <div class="input">
+            <input type="text" id="income-title-input" name="title" placeholder="Title">
+            <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+            <div class="add-income"><img src="plus-circle.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="hide" id="expense">
+          <ul class="list"></ul>
+          <div class="input">
+            <input type="text" id="expense-title-input" name="title" placeholder="Title">
+            <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
+            <div class="add-expense"><img src="plus-circle.svg" alt=""></div>
+          </div>
+        </div>
+          <div id="all">
+            <ul class="list"></ul>
+          </div>
+      </div>
   </div>
 
+  <script src="chart.js"></script>
+  <script src="budget.js"></script>
 </body>
-</html>
 
-
-</body>
 </html>
